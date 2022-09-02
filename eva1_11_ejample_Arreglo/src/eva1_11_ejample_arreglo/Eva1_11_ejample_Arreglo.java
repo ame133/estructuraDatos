@@ -43,6 +43,5 @@ public class Arreglos {
                 System.out.println("calificaciones del alumno: "+ (j+1) + ": " + info[i][j]); 
             }
         }
-    }
-    
+    }   
 }
