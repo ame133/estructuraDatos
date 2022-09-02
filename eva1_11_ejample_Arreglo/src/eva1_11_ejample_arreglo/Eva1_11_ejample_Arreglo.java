@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package eva1_11_ejample_arreglo;
+package arreglos;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-
-
-public class Eva1_11_ejample_Arreglo {
+/**
+ *
+ * @author LaptopHp
+ */
+public class Arreglos {
 
     /**
      * @param args the command line arguments
@@ -26,7 +28,7 @@ public class Eva1_11_ejample_Arreglo {
             String alumno = JOptionPane.showInputDialog(null, "Ingresa numero de alumnos en el grupo: " + (i+1));
             int alumnos =  Integer.parseInt(alumno);
             info [i] = new int [alumnos];
-            System.out.println(info[i].length);
+            //System.out.println(info[i].length);
             
             for (int j = 0; j < info[i].length; j++) {                
                 String calif = JOptionPane.showInputDialog(null, "Ingresa la calificacion");
@@ -35,6 +37,12 @@ public class Eva1_11_ejample_Arreglo {
             }
         }
         
+        for (int i = 0; i < info.length; i++) {
+            System.out.println("Grupo: " + (i+1) );
+            for (int j = 0; j < info[i].length; j++) {                
+                System.out.println("calificaciones del alumno: "+ (j+1) + ": " + info[i][j]); 
+            }
+        }
     }
     
 }
