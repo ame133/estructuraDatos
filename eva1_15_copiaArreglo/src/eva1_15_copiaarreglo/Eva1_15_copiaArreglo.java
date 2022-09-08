@@ -15,15 +15,18 @@ public class Eva1_15_copiaArreglo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] arregloDatos = new int[100]; 
+       int[] arregloDatos = new int[100]; 
         llenar(arregloDatos);
         imprimir(arregloDatos);
         //copiar los valores almacenados en el arreglo
         int[] arregloCopia = new int [arregloDatos.length];
+        System.out.println("");
         System.out.println(arregloDatos);
         System.out.println(arregloCopia);
+        int indice = arregloDatos.length -1;
         for (int i = 0; i < arregloDatos.length; i++) {
-            arregloCopia[i] =arregloDatos[i];
+            arregloCopia[i] =arregloDatos[indice];
+            indice--;
         }
         //imprimir 
         imprimir(arregloCopia);
